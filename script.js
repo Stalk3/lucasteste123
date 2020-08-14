@@ -105,8 +105,6 @@ function criaElementos() {
         document.getElementById('iframe').style.display = "block";
         document.getElementById('callback').style.display = "none";
     }
-    
-
     framebutton.onclick = function exibirIframe() {
 
     // LINK DE ACESSO AO CHAT    
@@ -231,6 +229,8 @@ function criaElementos() {
     function CreatePesquisa() {
 
         var divPesquisa = document.createElement("Div")
+
+        document.body.appendChild(divPesquisa)
 
         divPesquisa.style.right = "10px";
         divPesquisa.style.bottom = "30px";
